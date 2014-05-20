@@ -2,22 +2,23 @@
 <html>
 
 <head>
- <title> Guessing Game </title>
+	<title> Guessing Game </title>
 </head>
 
 <body> 
 	<script>
-	var answer = 8;
+	var answer = Math.random()*10;
 	var number = prompt('Enter Your Number');
 	
 	while (number!= answer) {
 		if (number > answer) {
-			console.log('Number is too high'); }
+			alert('Number is too high'); }
 	else { 
-		console.log('Number is too low'); } 
-
+		alert('Number is too low'); } 
+		var number = prompt('Try again.')
+		
 	if (answer = number) {
-		console.log('That is the right number!'); }
+		alert('That is the right number!')
 	}
 
 	</script>
