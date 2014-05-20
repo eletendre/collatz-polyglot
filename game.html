@@ -8,17 +8,23 @@
 <body> 
 	<script>
 	var answer = Math.random()*10;
+	var answer = Math.ceil(4.1);
 	var number = prompt('Enter Your Number');
 	
-	while (number!= answer) {
+	while (number != answer) {
 		if (number > answer) {
-			alert('Number is too high'); }
-	else { 
-		alert('Number is too low'); } 
-		var number = prompt('Try again.')
-		
-	if (answer = number) {
-		alert('That is the right number!')
+			alert('Number is too high.');
+			var number = prompt('Try again.'); 
+	}
+
+} 
+
+		else { 
+			alert('Number is too low.'); 
+			var number = prompt('Try again.'); }
+
+		if (number = answer) {
+			alert('That is the right number!');
 	}
 
 	</script>
